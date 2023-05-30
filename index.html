@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortCut icon" href="./img/logo.jpg">
+     <link rel="stylesheet" href="css/style.css">
+    <title>Turnos</title>
+</head>
+<body>
+    <header id="header">
+        <img class="logo"  src="./img/logo2.jpg" alt="">
+        <h1>Bienvenidos a Turnos medicos.com </h1>
+    </header>
+    <hr>
+    <nav id="navegacion">
+        <ul id="lista-nav">
+            <li> <a href="index.html">Home</a>
+            </li>
+            <li><a href="/contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <h2>Plataforma de Reservas online</h2>
+  
+    <section id="container">
+         <h4 id="cuadroGestion">Gestiona la reseerva de tu turno de forma: <b> práctica, rapida y facil</b></h4>
+        <h2>Registre Sus datos</h2>
+        
+         <form id="formulario">
+        <label for="">Nombre:</label> <br>
+        <input name="name" type="text" id="nombre" placeholder="Nombre Completo" required>
+        <br>
+        <label for="">Apellido:</label><br>
+        <input name="last" type="text" id="apellido" placeholder="Apellidoo" required>
+        <br>
+        <label for="">dni:</label> <br>
+        <input name="id" type="number" id="dni" placeholder="Dni o Cedula de identificacion" required>
+        <br>
+        <label for="">telefono</label> <br>
+        <input name="Phone" type="number" id="telefono" placeholder="Tel/celular" required>  <label for="">Email:</label> <br>
+        <input name="email" type="email" id="email" placeholder="Email" required> <br>  
+        <label for="">Fecha</label> <br>
+         <input name="date" type="date" id="date" placeholder="Fecha del turno " required>
+         <input type="submit" class="btn" id="button" value="Enviar" >
+    </form>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('XeYmwhWi8dbrOYwEs')
+  </script>
+</section>
+<hr>
+
+<h2>Elija el medico y especialidad: </h2>
+<div id="contenedorMedicos"></div>
+<hr>
+
+<!--CREO UN LOGIN-->
+<button id="btnDos">Por consultas y ayuda no dudes en contactarnos</button>
+<!--ESPECIALIDADES MEDICAS-->
+<div id="contenedorE"></div>
+
+  <footer id="footer">
+    <h1 class="tituloF">Caracteristicas</h1>
+    <div id="divFooter">
+    <p id="parrafo"> <b>Autoadministrable:</b> <br>
+        Podrás crear los turnos en el momento que quieras desde nuestro Panel de Administración.</p>
+    <p id="parrafo"> <b>Simple:</b> <br> 
+        Es tan simple que puede ser administrado por vos mismo desde cualquier parte del mundo.</p>
+    <p id="parrafo"> <b>Notificaciones:</b> <br>
+        Ya nadie se olvidará de los turnos, se enviarán recordatorios de forma automática.</p>
+    <p id="parrafo"> <b>Comunicación:</b>  <br>
+        Podrás chatear con sus clientes, manteniendo de esta forma un dialogo fluido.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="index.js" ></script>
+  
+</body>
+
+</html>

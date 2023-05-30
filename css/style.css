@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:pink;
+    display: flex;
+    flex-direction: row;
+}
+#navegacion{
+    background-color:black; 
+     border-bottom:  2px solid black;
+     border-bottom-left-radius: 3rem;
+     border-bottom-right-radius: 3rem;
+     padding-right: 2rem;
+    
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ #lista-nav{
+    display: flex;
+    flex-direction: row;
+   list-style-type: none;
+   justify-content:end; 
+   margin-bottom: 1.5rem;
+   padding-top: 1rem;
+ } 
+ a{
+    
+    text-decoration: none;
+    font-style: oblique;
+    font-size: 20px;
+    color: beige;
+    font-weight: bolder;
+    margin-right: 1rem; 
+ }
+ a:hover{
+    color:pink;
+    text-overflow: 3px 3px black;
+ }
+
+body{
+    background-image: url(../img/fondo3.webp);
+}
+
+h1{
+    padding-top: 40px;
+    padding-left: 4rem;
+    font-size: 50px;
+    text-decoration:none;
+    color:rgb(67, 43, 11);
+    font-weight: bolder;
+}
+.tituloF{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: 5px underline red;
+}
+#color{
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 50px;
+    padding-top: 3rem;
+    padding-left: 6rem;
+}
+
+h2{
+    font-size: 30px;
+ padding-bottom: .5rem;
+    text-align: center;
+    padding-top: .5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px pink; 
+    text-decoration: underline;
+}
+h5{
+    margin-top: 1rem;
+}
+#divComentarios{
+    background-color: antiquewhite;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+#cuadroGestion{
+    background-color:palevioletred;
+    border: 3px double black;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+#cuadroGestion:hover{
+    background-color: pink;
+}
+.titulo-card{
+    font-size: 1rem;
+    font-weight: 2px bold;
+    text-decoration: 3px underline red;
+    padding-left: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.imgMedicos{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border: 2px solid;
+}
+.card{
+    display: inline-flex;
+    border: 1px solid rgb(67, 43, 11);
+    width: 22rem;
+    height: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: grey
+}
+.redCard{
+    display: inline-flex;
+    border: 1px solid rgb(67, 43, 11);
+    width: 22rem;
+    height: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(224, 92, 92);
+    color: bisque;
+}
+ul{
+    margin-left: 1rem;
+    padding-top: 0;
+}
+.Button{
+    margin-top: 1.5rem;
+    
+}
+
+#footer{
+    background-color:rgb(241, 118, 159); 
+   
+    border-top: 2px solid rgb(67, 43, 11);
+}
+#divFooter{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+#parrafo{
+    padding-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-left: 2px solid white;
+}
+#parrafo:hover{
+    color: whitesmoke;
+
+}
+h4{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#formulario{
+   width: 50vw ;
+   padding: 30px 30px 30px 30px;
+    margin-left: 4rem;
+    margin-right: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    
+}
+input{
+    width: 50vw;
+    height: 2.4rem;
+   
+}
+
+
+#btnDos{
+    background-color: rgb(107, 165, 107);
+    color: aliceblue;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
+    margin-bottom: 6rem;
+}
+#btnDos:hover{
+    background-color: rgb(97, 123, 97);
+}
+.btn{
+    width: 10rem;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+}
+.m2{
+    width: 200px;
+    height: 30px;
+}
+select{
+    height: 10rem;
+    width: 30rem;
+    margin-left: 3rem;
+}
+.parrafoDos{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 20px  20px 20px 20px;
+}
+#contenedorLista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+iframe{
+    width: 350px;
+    height: 300px;
+    border: 4px solid black;
+    margin-left: 5rem;
+}
+.ubicacion{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-left: 2px solid black;
+
+    }
+    .contactos{
+        padding-left: 5rem;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
