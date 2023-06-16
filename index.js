@@ -3,6 +3,21 @@
 const header =document.getElementById("header");
 console.log(header);
 
+//setInterval
+const titulo=document.getElementById("titulo");
+
+const letras= ["B","Bi","Bie","Bien","Bienv","Bienve","Bienven","Bienveni","Bienvenid","Bienvenido","Bienvenidos",
+"Bienvenidos a"," Bienvenidos a T","Bienvenidos a Tu","Buenvenidos a Tur","Bienvenidos a Turn","Bienvnidos a Turno",
+"Bienvenidos a Turnos","Bienvenidos a Turnos o","Bienvenidos a turnos on","Bienvenidos a Turnos onl","Bienvenidos a Turnos onli"
+,"Bienvenidos a Turnos onlin","Bienvenidos a Turnos online","Bienvenidos a Turnos online .","Bienvenidos a Turnos online.c"
+,"Bienvenidos a Turnos online.co","Bienvenidos a Turnos online.com",];
+
+let index=0;
+setInterval(() => {
+   titulo.textContent = letras[index];
+   index = (index + 1) % letras.length;
+ }, 50);
+ 
 //Login
 
 const btnDos=document.getElementById("btnDos");
