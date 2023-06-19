@@ -16,7 +16,7 @@ let index=0;
 setInterval(() => {
    titulo.textContent = letras[index];
    index = (index + 1) % letras.length;
- }, 50);
+ }, 330);
  
 //Login
 
@@ -48,6 +48,8 @@ Swal.fire({
 })
 })
 
+    
+
 
 const fondo2=document.getElementById("fondo2");
 console.log(fondo2);
@@ -55,7 +57,6 @@ console.log(fondo2);
 
 const footer=document.getElementById("footer");
 console.log(footer);
-
 
 
 
