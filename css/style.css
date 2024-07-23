@@ -1,399 +1,393 @@
-*{
-    padding: 0;
+/* General Styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    color: #1a237e; /* Azul oscuro para el texto */
+    background-color: #e3f2fd; /* Fondo claro con un toque celeste */
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
-header{
-    background-color:pink;
+
+/* Header Styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3949ab; /* Azul medio */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+h2{
+  margin-left: 100px;
+}
+#titulo {
+    font-size: 2em;
+    margin: 0;
+    color: #bbdefb; /* Celeste pálido para el título */
+}
+
+/* Navigation Styles */
+nav{
+    background-color: #3949ab;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+}
+#lista-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista-nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#lista-nav a {
+    color: #bbdefb; /* Celeste pálido para los enlaces */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#lista-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+    background-color: #64b5f6; /* Celeste para los botones */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10%;
+}
+
+button:hover {
+    background-color: #42a5f5; /* Celeste más oscuro para el hover */
+}
+
+/* Contenedor de Médicos */
+#contenedorMedicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos de las Cards */
+.card, .redCard {
+    background-color: #ffffff;
+    border: 2px solid #64b5f6; /* Borde celeste */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /* Diseño en fila */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover, .redCard:hover {
+    transform: scale(1.05);
+}
+
+.redCard {
+    border-color: #d32f2f; /* Borde rojo */
+    background-color: #ffcdd2; /* Fondo rojo claro */
+}
+
+.imgMedicos {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.titulo-card {
+    color: #1a237e;
+    padding: 10px;
+    border-bottom: 2px solid #3949ab; /* Borde azul */
+    margin: 0;
+    flex: 1; /* Para ocupar todo el espacio disponible */
+}
+
+.card p {
+    color: #1a237e; /* Texto azul oscuro */
+    padding: 10px;
+    margin: 0;
+    flex: 2; /* Para ocupar más espacio */
+}
+
+.Button {
+    background-color: #64b5f6; /* Botón celeste */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.Button:hover {
+    background-color: #42a5f5; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    border: 1px solid #64b5f6; /* Borde celeste claro */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #64b5f6; /* Celeste para el botón de enviar */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #42a5f5; /* Celeste más oscuro para el hover del botón de enviar */
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #3949ab; /* Azul medio para el fondo del pie de página */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #64b5f6; /* Celeste para los títulos del footer */
+    margin-top: 0;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #bbdefb; /* Celeste pálido para los enlaces */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+} /* Estilos del formulario */
+
+#formDos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-#navegacion{
-    background-color:black; 
-     border-bottom:  2px solid black;
-     border-bottom-left-radius: 3rem;
-     border-bottom-right-radius: 3rem;
-     padding-right: 2rem;
-    
-}
-.logo{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin-left: 2rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
- #lista-nav{
-    display: flex;
-    flex-direction: row;
-   list-style-type: none;
-   justify-content:end; 
-   margin-bottom: 1.5rem;
-   padding-top: 1rem;
- } 
- a{
-    
-    text-decoration: none;
-    font-style: oblique;
-    font-size: 20px;
-    color: beige;
-    font-weight: bolder;
-    margin-right: 1rem; 
- }
- a:hover{
-    color:pink;
-    text-overflow: 3px 3px black;
- }
-
-body{
-    background-image: url(../img/fondo3.webp);
-    margin: 0;
-}
-
-h1{
-    padding-top: 40px;
-    padding-left: 4rem;
-    font-size: 50px;
-    text-decoration:none;
-    color:rgb(67, 43, 11);
-    font-weight: bolder;
-}
-.tituloF{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: 5px underline red;
-}
-#color{
-    text-decoration: none;
-    display: inline-flex;
-    flex-direction: row;
-    font-size: 50px;
-    padding-top: 3rem;
-    padding-left: 6rem;
-}
-
-h2{
-    font-size: 30px;
- padding-bottom: .5rem;
-    text-align: center;
-    padding-top: .5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px pink; 
-    text-decoration: underline;
-}
-h5{
-    margin-top: 1rem;
-}
-#divComentarios{
-    background-color: antiquewhite;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
-}
-#cuadroGestion{
-    background-color:palevioletred;
-    border: 3px double black;
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-#cuadroGestion:hover{
-    background-color: pink;
-}
-.titulo-card{
-    font-size: 1rem;
-    font-weight: 2px bold;
-    text-decoration: 3px underline red;
-    padding-left: 0.5rem;
-    text-align: center;
-    padding: 0.5rem;
-}
-.imgMedicos{
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-    margin-left: 10px;
-    border: 2px solid;
-}
-.card{
-    display: inline-flex;
-    border: 1px solid rgb(67, 43, 11);
-    width: 22rem;
-    height: 10rem;
-    padding: 1rem;
-    margin: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: grey
-}
-.redCard{
-    display: inline-flex;
-    border: 1px solid rgb(67, 43, 11);
-    width: 22rem;
-    height: 10rem;
-    padding: 1rem;
-    margin: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: rgb(224, 92, 92);
-    color: bisque;
-}
-ul{
-    margin-left: 1rem;
-    padding-top: 0;
-}
-.Button{
-    margin-top: 1.5rem;
-    
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(241, 118, 159); 
-    border-top: 2px solid rgb(67, 43, 11);
-}
-#divFooter{
-    display:inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 2rem;
-    gap: 1rem;
-
-}
-#parrafo{
+    background-color: #798ac8; /* Fondo rosado */
     padding: 30px;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    border-left: 2px solid white;
-}
-#parrafo:hover{
-    color: whitesmoke;
-
-}
-h4{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-#formulario{
-   width: 50vw ;
-   padding: 30px 30px 30px 30px;
-    margin-left: 4rem;
-    margin-right: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    justify-content: center;
-    
-}
-.btnTres{
-    width: 30vw;
-    height: 2.4rem;
-    margin-left: 4rem;
-   
-}
-input{
-     width: 50vw;
-    height: 2.4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#btnDos{
-    background-color: rgb(107, 165, 107);
-    color: aliceblue;
-    width: 20rem;
-    height: 4rem;
-    margin-top: 2rem;
-    margin-left: 20rem;
-    margin-bottom: 6rem;
+.especialidad {
+    margin: 10px;
+    width: calc(33.333% - 20px); /* Tres elementos por fila */
 }
-#btnDos:hover{
-    background-color: rgb(97, 123, 97);
-}
-#button{
-    width: 10rem;
-    margin-left: 8rem;
-    margin-bottom: 4rem;
-}
-.m2{
-    width: 200px;
-    height: 30px;
-}
-select{
-    height: 10rem;
-    width: 30rem;
-    margin-left: 3rem;
-}
-.parrafoDos{
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
-    background-color: white;
-    padding: 20px  20px 20px 20px;
-}
-.link-contacto{
-    color: black;
-    font-size: 20px;
-    text-decoration: underline;
-    font-style:unset;
-}
-#contenedorLista{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-iframe{
-    width: 350px;
-    height: 300px;
-    border: 4px solid black;
-    margin-left: 5rem;
-}
-.ubicacion{
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-left: 2px solid black;
 
+.especialidad input {
+    margin-right: 10px;
+}
+
+.btnTres {
+    background-color: #f06292; /* Rosa fucsia para el botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btnTres:hover {
+    background-color: #ec407a; /* Rosa más oscuro para el hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .especialidad {
+        width: calc(50% - 20px); /* Dos elementos por fila */
     }
-    .contactos{
-        padding-left: 5rem;
-    }
-    .icon{
-        width: 40px;
-        height: 40px;
+}
+
+@media (max-width: 480px) {
+    .especialidad {
+        width: 100%; /* Un elemento por fila */
     }
 
+    .btnTres {
+        width: 100%;
+    }
+}
 
-
-    @media(max-width:500px){
-        header{
-            display: flex;
-            flex-direction: column;
-           padding: 0;
-        }
-        .logo{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-left: 9rem;
-        }
-        h1{
-            font-size: 30px;
-           padding-top: 5px;
-           padding-left: 1rem;
-        }
-         #lista-nav{
-            display: flex;
-            flex-direction: row;
-           list-style-type: none;
-           justify-content:center; 
+/* Media Queries */
+@media (max-width: 768px) {
+    #header, #footer {
         text-align: center;
-        }
-         a{
-            
-            text-decoration: none;
-            font-style: oblique;
-            font-size: 20px;
-            color: beige;
-            font-weight: bolder;
-            margin-right: 1rem; 
-         }
-         a:hover{
-            color:pink;
-            text-overflow: 3px 3px black;
-         }
-         #btnDos{
-            background-color: rgb(107, 165, 107);
-            color: aliceblue;
-            width: 200px;
-            height: 70px;
-            margin: 2rem;
-            margin-top: 1rem;
-            margin-left: 2rem;
-            }
-            
-        #btnDos:hover{
-            background-color: rgb(97, 123, 97);
-        }
-        #footer{
-           display: inline;
-           justify-content: center;
-           align-items: center; 
-           background-color:rgb(241, 118, 159); 
-           border-top: 2px solid rgb(67, 43, 11);
-           
-        }
-        .tituloF{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-decoration: 5px underline red;
-            margin: .5rem;
-            margin-left: 30px;
-        }
-        #divFooter{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            background-color:rgb(241, 118, 159); 
-            border-top: 2px solid rgb(67, 43, 11);
-           padding: 1rem ;
-           gap: .5rem;
-            
-                       
-        }
-        #parrafo{
-            display: block;
-            flex-direction: column;
-           
-        }
-        #button{
-            width: 10rem;
-           margin: 2rem;
-           margin-left: 20px;
-        }
-        #especialidades{
-            width: 350px;
-            height: 200px;
-            margin: 2rem;
-            margin-bottom: 0%;
-        }
-        .btnTres{
-           margin-top: 2px;
-           margin-left: 5rem;
-        }
-        iframe{
-            width: 300px;
-            height: 300px;
-            border: 2px solid black;
-            margin: 2rem;
-        }
-        .ubicacion{
-            padding-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            border-left: 2px solid black;
-        
-            }
-            .contactos{
-                display: flex;
-                flex-direction: column;
-                padding-left: 2rem;
-            }
-            .icon{
-               
-               max-width: 40px;
-               margin-right: 30px;
-            }
-            .link-contacto{
-                color: black;
-                font-size: 15px;
-                text-decoration: underline;
-            }
-      
-    } 
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .redCard {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    #lista-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lista-nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #header, #footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .redCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    #lista-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lista-nav li {
+        margin: 10px 0;
+    }
+
+    .imgMedicos {
+        width: 80px;
+        height: 80px;
+    }
+
+    .titulo-card, .card p {
+        font-size: 0.9em;
+    }
+
+    .Button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 1.5em;
+    }
+
+    .imgMedicos {
+        width: 60px;
+        height: 60px;
+    }
+
+    .titulo-card, .card p {
+        font-size: 0.8em;
+    }
+
+    .Button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}

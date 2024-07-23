@@ -39,7 +39,7 @@ Swal.fire({
         let password=document.getElementById("password").value;
         //ENVIO A OTRA PAGINA
         if(usuario===usuarioAutorizado && password===passwordAutorizado){
-            window.location.href = "contactos.html";
+            window.location.href = "medicos.html";
             
             
         }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="shortCut icon" href="./img/logo.jpg">
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="/css/style.css">
     <title>Turnos</title>
 </head>
 <body>
@@ -19,52 +19,28 @@
         <ul id="lista-nav">
             <li> <a href="index.html">Home</a>
             </li>
-            <li><a href="/contactos.html">Contactos</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+            <li><a href="medicos.html">Medicos</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#caracteristicas">Caracteristicas</a></li>
+            <li><a href="#comentarios">comentarios</a></li>
         </ul>
     </nav>
+  
+  <main>
     <h2>Plataforma de Reservas online</h2>
   
     <section id="container">
          <h4 id="cuadroGestion">Gestiona la reseerva de tu turno de forma: <b> práctica, rapida y facil</b></h4>
-        <h2>Registre Sus datos</h2>
-        
-         <form id="formulario">
-        <label for="">Nombre:</label> <br>
-        <input name="name" type="text" id="nombre" placeholder="Nombre Completo" required>
-        <br>
-        <label for="">Apellido:</label><br>
-        <input name="last" type="text" id="apellido" placeholder="Apellidoo" required>
-        <br>
-        <label for="">dni:</label> <br>
-        <input name="id" type="number" id="dni" placeholder="Dni o Cedula de identificacion" required>
-        <br>
-        <label for="">telefono</label> <br>
-        <input name="Phone" type="number" id="telefono" placeholder="Tel/celular" required>  <label for="">Email:</label> <br>
-        <input name="email" type="email" id="email" placeholder="Email" required> <br>  
-        <label for="">Fecha</label> <br>
-         <input name="date" type="date" id="date" placeholder="Fecha del turno " required>
-         <input type="submit" class="btn" id="button" value="Enviar" >
-    </form>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  
-  <script type="text/javascript">
-    emailjs.init('XeYmwhWi8dbrOYwEs')
-  </script>
-</section>
-<hr>
-
-<h2>Elija el medico y especialidad: </h2>
-<div id="contenedorMedicos"></div>
-
-
-<!--CREO UN LOGIN-->
+         <!--CREO UN LOGIN-->
 <button id="btnDos">Por consultas y ayuda no dudes en contactarnos</button>
 
+    </section>
 
-  <footer id="footer">
-    <h1 class="tituloF">Caracteristicas</h1>
-    <div id="divFooter">
+    <section id="caracteristicas">
+  
+    <h1>Caracteristicas</h1>
+  
     
     <p id="parrafo"> <b>Autoadministrable:</b> <br>
         Podrás crear los turnos en el momento que quieras desde nuestro Panel de Administración.</p>
@@ -75,13 +51,217 @@
     <p id="parrafo"> <b>Comunicación:</b>  <br>
         Podrás chatear con sus clientes, manteniendo de esta forma un dialogo fluido.</p>
   </div>
-</footer>
+    </section>
+
+    <section id="especialidades">
+  <div id="contenedorLista">
+  
+    <h1>Especialidades </h1>
+    <form id="formDos">
+        <div class="especialidad">
+            <input type="checkbox" id="neurocirugia" name="especialidades" value="Neurocirugia">
+            <label for="neurocirugia">Neurocirugia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="orl" name="especialidades" value="ORL">
+            <label for="orl">Otorrinolaringologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="akr" name="especialidades" value="Kinesiologia Respiratoria">
+            <label for="akr">Kinesiologia Respiratoria</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="akm" name="especialidades" value="Kinesiologia Motora">
+            <label for="akm">Kinesiologia Motora</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="odontologia" name="especialidades" value="Odontologia">
+            <label for="odontologia">Odontologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="oftalmologia" name="especialidades" value="Oftalmologia">
+            <label for="oftalmologia">Oftalmologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="cardiologia" name="especialidades" value="Cardiologia">
+            <label for="cardiologia">Cardiologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="fono" name="especialidades" value="Fonoaudiologia">
+            <label for="fono">Fonoaudiologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="endocrinologia" name="especialidades" value="Endocrinologia">
+            <label for="endocrinologia">Endocrinologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="neurologia" name="especialidades" value="Neurologia">
+            <label for="neurologia">Neurologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="pediatria" name="especialidades" value="Pediatria">
+            <label for="pediatria">Pediatria</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="clinico" name="especialidades" value="Medico Clinico">
+            <label for="clinico">Medico Clinico</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="dermatologia" name="especialidades" value="Dermatologia">
+            <label for="dermatologia">Dermatologia</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="estetica" name="especialidades" value="Cirugia Estetica">
+            <label for="estetica">Cirugia Estetica</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="tc" name="especialidades" value="TC">
+            <label for="tc">Servicio de Tomografias (TC)</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="rnm" name="especialidades" value="RNM">
+            <label for="rnm">Resonancia Magnetica(RMN)</label>
+        </div>
+        <div class="especialidad">
+            <input type="checkbox" id="eco" name="especialidades" value="Ecografia">
+            <label for="eco">Ecografia</label>
+        </div>
+        <input class="btnTres" type="submit" value="Seleccionar">
+    </form>
+     
+     <p class="parrafoDos"> <b>Cómo pedir Turnos</b> 
+         Para solicitud de turnos por este medio, recomendamos comunicarse directamente y evitar intermediarios. Ante la alta demanda, se deben solicitar turnos con la mayor anticipación posible.
+         
+         Tenga en cuenta que, en algunas especialidades, suelen haber demoras entre 15 y 45 días. En caso de no encontrar turno en un hospital, puede consultar aquí por instituciones médicas relacionadas.
+         
+         Si desea solicitar un turno por teléfono debe llamar al número 01146693590, aunque se informan largas demoras para la comunicación. Otra opción es ingresar en la web <a class="link-contacto" href="www.facebook.com/pages/turnosOnline.com/217966391572144">Link</a> para la solicitud de turnos online las 24 hs.
+         
+         En el caso de querer cancelar un turno, debe hacerlo con al menos 24 horas de anticipación, contactando por vía telefónica o presencial en las instalaciones de la institución.</p>
+         <p class="parrafoDos"><b>Especialidad</b> <br>
+             Acorde a una respetable trayectoria en materia de medicina y salud, podemos encontrar profesionales de las principales especialidades médicas. Del mismo modo, se brinda atención programada y de urgencias, se realizan estudios médicos y se brinda soporte en muchas de las ramas comunes de la medicina moderna.
+             
+             En este Medio también pone a disposición profesionales odontológicos, además de equipamiento de primer nivel para cualquier estudio o tratamiento, que lo ponen a la cabeza en materia odontológica en la ciudad de Bs As.
+             
+             El servicio de imágenes y laboratorio es reconocido en todo el país y en él se pueden realizar análisis de todo tipo, resonancias, dopplers, ecografías entre tantos otros estudios. <br>
+             
+             <b>Especialidades médicas:</b> <br> consulte por la atención del cuerpo médico en especialidades como cardiología, cirugía, clínica médica, dermatología, ginecología, maternidad, obstetricia, oftalmología, pediatría, salud mental, etc. <br>
+             <b> Estudios médicos:</b> <br> diagnóstico por imágenes, ecografía, densitometría, laboratorio, entre otros.
+             Atención ambulatoria, consultorios externos y servicio de guardia (ver abajo) <br>
+           <b>Internación:</b>   consulte por disponibilidad de camas para internación general, intermedia y unidad coronaria, así como servicios de internación adicionales. <br>
+            <b>Vacunación:</b>  consulte al personal de la institución por disponibilidad de servicios de vacunación en los consultorios externos de Hospitales.</p>
+ 
+ 
+    </div>
+    </section>
+    
+    
+    <section>
+      <h2>Registre Sus datos</h2>
+        
+      <form id="formulario">
+     <label for="">Nombre:</label> <br>
+     <input name="name" type="text" id="nombre" placeholder="Nombre Completo" required>
+     <br>
+     <label for="">Apellido:</label><br>
+     <input name="last" type="text" id="apellido" placeholder="Apellidoo" required>
+     <br>
+     <label for="">dni:</label> <br>
+     <input name="id" type="number" id="dni" placeholder="Dni o Cedula de identificacion" required>
+     <br>
+     <label for="">telefono</label> <br>
+     <input name="Phone" type="number" id="telefono" placeholder="Tel/celular" required>  <label for="">Email:</label> <br>
+     <input name="email" type="email" id="email" placeholder="Email" required> <br>  
+     <label for="">Fecha</label> <br>
+      <input name="date" type="date" id="date" placeholder="Fecha del turno " required>
+      <input type="submit" class="btn" id="button" value="Enviar" >
+ </form>
+ <script type="text/javascript"
+ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+ emailjs.init('XeYmwhWi8dbrOYwEs')
+</script>
+</section>
+<hr>
+<section>
+  <h2>Como Llegar</h2>
+ <div class="ubicacion">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7211817393286!2d-58.7745317!3d-34.5099522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc98247f44271d%3A0x4a2072b0d05797a2!2sCnel.%20Ram%C3%B3n%20L.%20Falc%C3%B3n%2C%20Jos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1685479661792!5m2!1ses!2sar"  ></iframe>
+ <p class="contactos"><img class="icon"src="https://img.icons8.com/?size=1x&id=o18eFFxP47RJ&format=png" alt="">
+     Telfono: <br>(011) 4635-6624 <br>
+      UBICACIÓN <br>
+     <img class="icon"src="https://img.icons8.com/?size=1x&id=DcygmpZqBEd9&format=png" alt="">
+      Av. Ramón Falcón 5210
+      VILLA LURO | CABA | ARGENTINA <br>
+     
+      <img class="icon" src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="">
+     MAIL: recepcion@turnosOnline.com.ar</p>
+  
+ 
+ 
+ </div>
+</section>
+<section id="comentarios">
+  <!--RUTAS RELATIVAS-->
+ <h2>COMENTARIOS:</h2>
+ <div id="divComentarios"> 
+ </div>
+  </section>
+<section id="contactos">
+     <h1 class="tituloF" >Nuestros Contactos</h1>
+     <div id="divFooter">
+     
+     <p>Copyright © 2015 - 2023 turnosOnline.com </p>
+    <p> UBICACIÓN</p>
+ 
+    <img class="icon"src="https://img.icons8.com/?size=1x&id=DcygmpZqBEd9&format=png" alt="">
+    <p> Av. Ramón Falcón 5210
+     VILLA LURO | CABA | ARGENTINA</p>
+     
+    <img class="icon" src="https://img.icons8.com/office/80/000000/whatsapp--v1.png" alt=""> <p>(011) 4635-6624</p> 
+     <img class="icon" src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="">
+    <p>MAIL: recepcion@turnosOnline.com.ar</p>
+ </div>
+    </section>
+  </main>
+    <footer id="footer">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contacto</h3>
+              <p><strong>Teléfono:</strong> (011) 4635-6624</p>
+              <p><strong>Email:</strong> <a href="mailto:recepcion@turnosOnline.com.ar">recepcion@turnosOnline.com.ar</a></p>
+          </div>
+          <div class="footer-section">
+              <h3>Dirección</h3>
+              <p>Av. Ramón Falcón 5210</p>
+              <p>VILLA LURO | CABA | ARGENTINA</p>
+          </div>
+          <div class="footer-section">
+              <h3>Síguenos</h3>
+              <p>
+                  <a href="https://www.facebook.com/pages/turnosOnline.com/217966391572144" target="_blank">
+                      <img class="social-icon" src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook">
+                  </a>
+                  <a href="https://www.instagram.com/turnosOnline" target="_blank">
+                      <img class="social-icon" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram">
+                  </a>
+              </p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright © 2015 - 2023 turnosOnline.com</p>
+      </div>
+  </footer>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script src="contactos.js"></script>
-  <script src="medicos.js"></script>
-    <script src="index.js" ></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="/js/comentarios.js"></script>
+  <script src="js/contactos.js"></script>
+  <script src="js/medicos.js"></script>
+    <script src="js/index.js" ></script>
   
 </body>
 
